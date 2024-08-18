@@ -131,6 +131,7 @@ void HandleCache(Metadata* metadata, Result* result) {
         AddressSplit(op, address, &cache, metadata, result);
     }
 
+    fclose(fp);
     DeleteCache(&cache, S);
 }
 
